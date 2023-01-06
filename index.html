@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMER</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+    <div class='containerTimer'>
+        <div class="mode">TIMER</div>
+        <form class='timer'>
+                <input class='showTimer' type='time' step='1'/>
+        </form>
+    
+        <button onClick='buttonPlay()' class='buttonPlay command'>
+            PLAY
+        </button>
+    
+        <button onClick='buttonStop()' class='buttonStop command'>
+            STOP
+        </button>
+    
+        <button onClick='buttonSet()' class='buttonSet button-setting command'>
+            SETTING TIMER
+        </button>
+
+        <button onClick='buttonPomo()' class='buttonPomo command'>
+            POMODORO
+        </button>
+
+        <div class='buttons-div'>
+                <button onClick='buttonShort()' class='buttonShort buttons'>
+                    <h1 class='labelShort'>00:05:00</h1>
+                    SHORT BREAK
+                </button>
+    
+                <button onClick='buttonLong()' class='buttonLong buttons'>
+                    <h1 class='labelLong'>00:15:00</h1>
+                    LONG BREAK
+                </button>
+    
+                <button onClick='buttonFocus()' class='buttonFocus buttons'>
+                    <h1 class='labelFocus'>00:25:00</h1>
+                    FOCUS TIME
+                </button>
+        </div>
+    
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
